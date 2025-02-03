@@ -14,10 +14,10 @@ body {
  }
 /* Navigation Bar */
 nav {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgb(13, 11, 11);
     padding: 15px 0;
     font-family: 'Orbitron', sans-serif;
-    text-align: right;
+    text-align: center;
     position: fixed;
     width: 100%;
     top: 0;
