@@ -54,6 +54,7 @@ nav ul li a:hover {
     align-items: center;
     height: 100vh;
     padding-top: 60px;
+    flex-wrap: wrap;
 }
 
 /* Introduction Section */
@@ -382,4 +383,81 @@ nav ul li a:hover {
 .skills-container span:hover {
     box-shadow: 0 0 20px #ff00ff;
     transform: scale(1.05);
+}
+
+
+
+
+/* Mobile View: Vertical Navbar & Full-Width Intro */
+@media (max-width: 768px) {
+    /* Vertical Navbar */
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 150px; /* Sidebar width */
+        height: 100vh; /* Full height */
+        background: #111;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        z-index: 1000;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        padding: 15px 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        width: 100%;
+    }
+
+    /* Push the main content to the right */
+    body {
+        margin-left: 200px; /* Same as navbar width */
+    }
+
+    /* Full-Width Intro Section */
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    /* Profile Picture Above Intro Text */
+    .profile-pic {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .profile-pic img {
+        width: 150px; /* Adjust as needed */
+        height: auto;
+        border-radius: 50%;
+    }
+
+    /* Full-Width Text */
+    .intro{
+        width: 100%;
+    }
 }
